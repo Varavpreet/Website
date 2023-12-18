@@ -1,0 +1,103 @@
+/* Author: Varavpreet Kaur */
+/* HTML cheatsheet css */
+
+*{
+    margin:10px;
+    padding:0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: cyan;
+    margin: 0;
+}
+
+h1 {
+    color: #4670a2;
+    text-align: center;
+    padding: 20px;
+    background-color: lightcyan;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 5px dashed blue;
+}
+
+section 
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.left, .right 
+{
+    text-align: center;
+    width: 95%;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse:  collapse;
+    margin-top: 20px;
+}
+
+th, td
+{
+    border: 1px solid red;
+    padding: 8px;
+    text-align: left;
+}
+
+th 
+{
+    background-color:lightcyan;
+    color: #4670a2;
+}
+
+.left table th, .right table th 
+{
+    background-color: lightcyan;
+}
+
+.left table td, .right table td 
+{
+    background-color:lightpink;
+}
+
+.footer 
+{
+    background-color: #333;
+    color:lightpink;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a 
+{
+    color: #61dafb;
+}
+
+.header, nav 
+{
+    background-color: #333;
+    color: lightskyblue;
+    padding: 10px;
+}
+
+nav a 
+{
+    color: lightcyan;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.center-image 
+{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-content
+ {
+    padding: 20px;
+}
+

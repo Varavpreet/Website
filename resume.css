@@ -1,0 +1,52 @@
+/* Author:Varavpreet Kaur*/
+/* Resume css */
+
+*{
+    margin:5px;
+    padding:0;
+}
+
+body
+{
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 10px 10px;
+    background-color:peachpuff;
+
+}
+
+header 
+{
+    text-align: center;
+    background-color: indianred;
+    color: black;
+    padding: 30px;
+    margin-bottom: 5px;
+}
+section 
+{
+    margin-bottom: 20px;
+}
+h2 
+{
+    color:red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ol ,ul
+{
+    padding-left: 10px;
+}
+li 
+{
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+.education,.experience 
+{
+    margin-bottom: 20px;
+}
+.education h3,.experience h3
+{
+    color: #524fa1;
+}

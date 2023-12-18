@@ -1,0 +1,135 @@
+<!--Author: Varavpreet Kaur-->
+<!--Final Project TECH1101 WEB AND INTERNET FUNDAMENTLS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="hobbies.css">
+</head>
+
+<body>
+
+    <h2 align="center">Why do I think Hobbies are important? </h2>
+    <p>
+        My hobbies are essential to my well-being because they let me unwind and enjoy myself while encouraging
+        creativity and providing a respite from my daily grind. I feel more content and purposeful in life when I engage
+        in the activities I enjoy. It also promotes a feeling of achievement and reduces stress.
+    </p>
+    <div class="intrests">
+        Thus, I'd want to discuss my interests and hobbies in this part. <br>
+        In order to provide some interest for you, I've included three of my hobbies:<br>
+        <ul>
+            <li>Travelling</li>
+            <li>Cooking</li>
+            <li>Photography</li>
+            <li>Reading</li>
+        </ul>
+        You can select which of these is your favorite to see what I think about it. <br>
+        Kindly fill in the blank with the initials (in capital letters).<br>
+        For Example: T for Travelling.
+        <!-- Image glider -->
+        <div id="glider">
+
+            <img src="https://media.assettype.com/outlooktraveller%2Fimport%2Foutlooktraveller%2Fpublic%2Fuploads%2Farticles%2Fexplore%2Ftravel_map_21.jpg?auto=format%2Ccompress&fit=max&format=webp&w=700&dpr=1.3"
+                id="img1" style="display: block;">
+            <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1000w,f_auto,q_auto:best/newscms/2019_41/3044956/191009-cooking-vegetables-al-1422.jpg"
+                id="img2" style="display: none;">
+            <img src="https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg"
+                id="img3" style="display: none;">
+            <img src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t39.30808-6/323385597_737850210790453_3998487381662885075_n.jpg?stp=dst-jpg_p720x720&_nc_cat=111&ccb=1-7&_nc_sid=173fa1&_nc_ohc=U2rYrS7ykzgAX-Ls3eG&_nc_oc=AQnk-pNc5wldzOVjaTOZlQOhG4Dynsz29jMBKs4ZxPDZzeRycHd1tLA7gy8Kjr2UdpRCWRHS1g5QxUtrIQ-IA-c4&_nc_ht=scontent.fyyc3-1.fna&oh=00_AfDSFibK8i_HLFihOJQIC8ieH0BAPzAenvIlrOeeUT432Q&oe=6584025B"
+                id="img4" style="display: none;">
+            <div id="gliderbtn">
+                <button id="Forward" onclick="forward()">Next</button>
+                <button id="Previous" onclick="previous()">Previous</button>
+            </div>
+            <!-- input for hobbies -->
+            <input type="text" id="hobbies" oninput="checkInput()">
+            <p id="hobbycontent"></p>
+        </div>
+        <!-- Java script was not working externally. For this function to operate, i need to put it here. -->
+        <!--  Final hobbies js -->
+        <script>
+            document.getElementById("img1").style.display = 'block';
+            document.getElementById("img2").style.display = 'none';
+            document.getElementById("img3").style.display = 'none';
+            document.getElementById("img4").style.display = 'none';
+            // next button
+            function forward() {
+                let image1 = document.getElementById("img1");
+                let image2 = document.getElementById("img2");
+                let image3 = document.getElementById("img3");
+                let image4 = document.getElementById("img4");
+
+                if (getComputedStyle(image1).display === 'block') {
+                    image1.style.display = 'none';
+                    image2.style.display = 'block';
+                } else if (getComputedStyle(image2).display === 'block') {
+                    image2.style.display = 'none';
+                    image3.style.display = 'block';
+                } else if (getComputedStyle(image3).display === 'block') {
+                    image3.style.display = 'none';
+                    image4.style.display = 'block';
+                } else if (getComputedStyle(image4).display === 'block') {
+                    image4.style.display = 'none';
+                    image1.style.display = 'block';
+                }
+            }
+            // previous button
+            function previous() {
+                let image1 = document.getElementById("img1");
+                let image2 = document.getElementById("img2");
+                let image3 = document.getElementById("img3");
+                let image4 = document.getElementById("img4");
+
+                if (getComputedStyle(image1).display === 'block') {
+                    image1.style.display = 'none';
+                    image4.style.display = 'block';
+                } else if (getComputedStyle(image2).display === 'block') {
+                    image2.style.display = 'none';
+                    image1.style.display = 'block';
+                } else if (getComputedStyle(image3).display === 'block') {
+                    image3.style.display = 'none';
+                    image2.style.display = 'block';
+                } else if (getComputedStyle(image4).display === 'block') {
+                    image4.style.display = 'none';
+                    image3.style.display = 'block';
+                }
+            }
+            // input for hobbies
+            function checkInput() 
+            {
+                var inputElement = document.getElementById('hobbies');
+                var hiElement = document.getElementById('hobbycontent');
+                // content of hobbies input
+                if (inputElement.value === "T") 
+                {
+                    hiElement.innerHTML =
+                        "Travel takes us out of our comfort zones and inspires us to see, taste and try new things. It constantly challenges us, not only to adapt to and explore new surroundings, but also to engage with different people, to embrace adventures as they come and to share new and meaningful experiences with friends and loved ones. My passport to a colorful tapestry of experiences that inspires me to explore new places and push me beyond my comfort zone is travel. My journey becomes interacting with people from different cultures, welcoming adventures, and cherishing special times. Every journey is a learning experience that pushes, inspires, and transforms me. Traveling opens my eyes to the world's wonders and cultivates a deep appreciation for beauty that transcends ordinary limits. By traveling, I find a symphony that is in tune with humankind's pulse and captivates me with the excitement of unfamiliar locations and varied cultures.";
+                } 
+                else if (inputElement.value === "C")
+                {
+                    hiElement.innerHTML ="Cooking is the art, science, and craft of utilizing heat to make food more tasty, digestible, nutritious, or safe. It is sometimes referred to as cooking or the culinary arts in a professional setting. Cooking methods and ingredients differ greatly depending on the region; examples include grilling meals over an open flame, utilizing electric stoves, and baking in different kinds of ovens.";
+                }   
+                else if (inputElement.value === "P") 
+                {
+                    hiElement.innerHTML =
+                        "Photography freezes time to capture emotions and reveal beauty in fleeting moments. It is an immersive experience that goes beyond image capture. Using the camera as a medium, I convey a distinct viewpoint. It captures essence in classic frames, transforming the banal into visual poetry. As a kind of emotional travel document, every picture tells a story of happiness, grief, love, and resiliency. The photographer and subject perform a complex dance that captures both the subject's inner beauty and exterior beauty with a single click of the shutter. Technical complexities, such as mastery of composition and light manipulation, stimulate an intellectual quest for advancement, strengthening abilities and elevating appreciation for art. My passion for photography essentially honors life's kaleidoscope—a visual symphony that harmonizes the commonplace and the extraordinary, the mundane and the magical, providing comfort, inspiration, and a platform for exchanging distinctive viewpoints. Photography is more than just a pastime; it's a never-ending journey of creativity, introspection, and appreciation for the endless beauty that surrounds us.";
+                } 
+                else if (inputElement.value === "R") 
+                {
+                    hiElement.innerHTML =
+                        "Reading is usually a solitary activity that is done silently, however occasionally someone will read aloud for themselves or for the benefit of others in order to improve understanding.";
+                }
+                else 
+                {
+                    hiElement.innerHTML = "invalid input";
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!--Author: Varavpreet Kaur-->
+<!--Final Project TECH1101 WEB AND INTERNET FUNDAMENTLS-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varav Personal Web Site </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body >
+    <header>
+        <nav>
+            <div class="left">Varav's Personal Website</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li>
+                        <a href="htmlcheatsheet.html">HTML Cheatsheet</a>
+                    </li>
+                    <li>
+                        <a href="contactme.html">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="firstsection">
+        <div class="leftsection">
+            Heyyy Everyone!! Myself
+            <span class="text">Varavpreet Kaur</span>
+            <div>Welcome to my website</div>
+            <!--Text animation-->
+            <span id="element">& aWeb designer.</span>
+            <span class="typed-cursor typed-cursor--blink" area-hidden="true"></span>
+        </div>
+        <div class="rightsection">
+            <img src="">
+        </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+        <!--Introduction-->
+        <h2 class="textani">Here you will get to know... <br> Who is VARAV!!!
+        </h2>
+        <div class="rectangle">
+            "Hii!! My name is Varavpreet Kaur, and i'm a unique person with wide range of interests and a multifaceted
+            personality. I'm very fond of learning new things. I enjoy investigating the points where several fields
+            converge, whether I'm working in the fields of techonology, arts or science. Motivated by inquisitiveness, I
+            view obstacles as chances for development and place a high value on flexibility and resilience. Being a
+            creative mind, I like using a variety of media to express myself, such as writing, art or solving problems.
+            I'm dedicated to creating deep connections and I think empathy and teamwork are powerful tools. I basically
+            consider myself to be always exploring myself and finding ways to contribute for the better environment
+            around me. "
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="footerfirst">
+                <ul>
+                    <li>
+                        "You can explore more on My Linked-In Profile:"
+                        <a  href="https://www.linkedin.com/in/varavpreet-kaur-1112a42a5/">linkedin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footersecond">
+                "Thanks for visiting." <br> "Have a wonderful Day!"
+            </div>
+        </div>
+        <div class="bottom">www.varavpersonalwebsite || all rights reserved</div>
+    </footer>
+
+    <!-- Source : https://github.com/mattboldt/typed.js -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>I am going to be a  </i> Software developer.', '&amp;  a Web designer..'],
+            typeSpeed: 40,
+        });
+    </script>
+    <style data-typed-js-cursor-css="true">
+        .typed-cursor
+        {
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink
+        {
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink
+        {
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink
+        {
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+    </style>
+</body>
+</html>
